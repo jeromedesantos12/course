@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox Animation Demo</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #f0f0f0;
+        padding: 20px;
+      }
+
+      .controls {
+        margin-bottom: 20px;
+      }
+
+      .controls label {
+        margin-right: 10px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        height: 250px;
+        border: 3px dashed #999;
+        background: white;
+        transition: all 0.5s ease;
+      }
+
+      .box {
+        width: 80px;
+        height: 60px;
+        margin: 5px;
+        background: #4fc3f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: white;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>🎯 Flexbox Alignment Animation</h2>
+
+    <div class="controls">
+      <label>
+        Justify Content:
+        <select id="justify">
+          <option value="flex-start">flex-start</option>
+          <option value="center">center</option>
+          <option value="flex-end">flex-end</option>
+          <option value="space-between">space-between</option>
+          <option value="space-around">space-around</option>
+          <option value="space-evenly">space-evenly</option>
+        </select>
+      </label>
+
+      <label>
+        Align Items:
+        <select id="alignItems">
+          <option value="stretch">stretch</option>
+          <option value="flex-start">flex-start</option>
+          <option value="center">center</option>
+          <option value="flex-end">flex-end</option>
+        </select>
+      </label>
+
+      <label>
+        Align Content:
+        <select id="alignContent">
+          <option value="stretch">stretch</option>
+          <option value="flex-start">flex-start</option>
+          <option value="center">center</option>
+          <option value="flex-end">flex-end</option>
+          <option value="space-between">space-between</option>
+          <option value="space-around">space-around</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="container" id="flexContainer">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+
+    <script>
+      const container = document.getElementById("flexContainer");
+      document.getElementById("justify").addEventListener("change", (e) => {
+        container.style.justifyContent = e.target.value;
+      });
+      document.getElementById("alignItems").addEventListener("change", (e) => {
+        container.style.alignItems = e.target.value;
+      });
+      document
+        .getElementById("alignContent")
+        .addEventListener("change", (e) => {
+          container.style.alignContent = e.target.value;
+        });
+    </script>
+  </body>
+</html>

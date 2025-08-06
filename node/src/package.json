@@ -1,0 +1,11 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "chalk-rainbow": "^1.0.0",
+    "give-me-a-joke": "^0.5.1"
+  }
+}

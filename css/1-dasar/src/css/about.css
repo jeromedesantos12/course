@@ -1,0 +1,17 @@
+/* Element block */
+h1 {
+  color: white;
+  background-color: salmon;
+  /* #FA8072 (hex) */
+  /* rgb(250, 128, 114) */
+}
+/* Element inline */
+button {
+  background-color: salmon;
+  color: white;
+}
+/* Element block */
+p {
+  color: white;
+  background-color: grey;
+}

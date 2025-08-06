@@ -1,0 +1,15 @@
+{
+  "name": "latihan-tailwind",
+  "version": "1.0.0",
+  "description": "persiapan mern project",
+  "main": "index.html",
+  "author": "Jeremy Santoso",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.1.11"
+  }
+}

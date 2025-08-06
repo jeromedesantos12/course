@@ -1,0 +1,40 @@
+/* Direct descendant Selector */
+/* Artinya: hanya memilih elemen anak langsung, 
+bukan cucu, cicit, atau keturunan jauh lainnya */
+.jokes > p {
+  font-size: 16px;
+  color: salmon;
+}
+/* Psudo Classes */
+.jokes > p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+section button:hover {
+  background-color: salmon;
+}
+section:nth-of-type(2n) {
+  background-color: aquamarine;
+}
+/* Psudo Elements */
+section h3::first-letter {
+  font-size: xx-large;
+}
+section p::first-line {
+  color: salmon;
+}
+section h3::before {
+  content: "*";
+}
+/* Adjacent Selector */
+/* Artinya: pilih elemen yang langsung berada 
+setelah elemen lain dalam satu parent yang sama.*/
+a + button {
+  background-color: aquamarine;
+}
+/* Attribute Selector */
+/* Artinya: selector CSS yang memilih elemen 
+berdasarkan atribut HTML-nya. */
+input[type="search"] {
+  color: salmon;
+}

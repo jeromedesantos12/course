@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar TailwindCSS</title>
+    <link href="assets/css/output.css" rel="stylesheet" />
+    <style>
+      /* * {
+        border: 1px solid red;
+      } */
+    </style>
+  </head>
+  <body class="font-inter dark:bg-slate-800 dark:text-slate-200">
+    <div class="max-w-5xl mx-auto mt-10">
+      <div
+        class="grid place-content-center w-full h-100 bg-black shadow-xl mb-10 bg-cover bg-center rounded-2xl bg-[url(/assets/img/cover.jpg)]"
+      >
+        <div
+          class="w-100 h-100 rounded-full bg-white/30 backdrop-blur-md"
+        ></div>
+      </div>
+      <h1
+        class="text-6xl font-bold text-center mx-auto bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent mb-2"
+      >
+        Mari Belajar Tailwind CSS
+      </h1>
+      <h2 class="text-xl text-center mb-10">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nihil!
+      </h2>
+      <section>
+        <p
+          class="text-justify first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nemo
+          tenetur reiciendis fugiat repellat laudantium ipsam, eius suscipit
+          quis dicta necessitatibus vitae voluptatum ipsa alias nisi ad
+          repellendus fuga esse?
+          <a href="#" class="underline font-semibold text-blue-600"
+            >Incidunt nobis</a
+          >
+          fugiat omnis ullam tenetur dolorem praesentium sint placeat quisquam
+          voluptatibus facilis quos error, facere quod alias tempore! Blanditiis
+          quam eius assumenda minus. Vero sapiente quisquam quasi facere autem?
+          Assumenda minus odit quaerat illo quas eligendi neque a ex! Fugit,
+          omnis, aliquid atque saepe accusamus, iste officiis a dolore corrupti
+          aspernatur dolor asperiores doloremque at ducimus? Nam, similique
+          temporibus. Magni quibusdam minus quia? Quis consectetur beatae
+          temporibus libero ullam sequi omnis assumenda dignissimos eligendi
+          distinctio, fugiat enim nulla blanditiis atque aut reprehenderit
+          cupiditate voluptate unde natus architecto itaque placeat? Inventore
+          impedit laboriosam commodi voluptas ut eos maxime fuga. Corporis
+          accusamus earum illum libero repellendus, temporibus nostrum incidunt?
+          Quis nisi, nesciunt deleniti ut animi similique cumque recusandae ipsa
+          eius ratione!
+        </p>
+        <div
+          class="w-full h-100 bg-slate-500 my-5 overflow-y-scroll bg-center bg-fixed bg-cover bg-blend-multiply bg-[url(/assets/img/code.jpg)]"
+        >
+          <pre class="p-10 font-mono text-white text-justify"><code>
+const prompt = require(`prompt-sync`)();
+let maximum = Number(prompt(`Masukkan nilai maksimal! `));
+
+while (!maximum) maximum = Number(prompt("Masukkan nilai maksimal! "));
+const targetNum = Math.floor(Math.random() * maximum) + 1;
+let guess = Number(prompt(`\nMasukkan angka tebakan: `));
+
+while (guess !== targetNum)
+  if (!guess)
+    guess = Number(prompt(`Data yang anda masukkan bukan angka! Tebak lagi: `));
+  else if (guess > targetNum)
+    guess = Number(prompt(`Angka tebakan Anda terlalu besar! Tebak lagi: `));
+  else guess = Number(prompt(`Angka tebakan Anda terlalu kecil! Tebak lagi: `));
+
+console.log(`\nSelamat, tebakan kakak benar! ⸜(｡˃ ᵕ ˂ )⸝♡`);
+          </code></pre>
+        </div>
+        <div
+          class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md hover:bg-slate-100 group"
+        >
+          <h5
+            class="font-bold text-slate-700 text-xl mb-5 group-hover:text-sky-700 selection:bg-lime-300 selection:text-black"
+          >
+            My Card
+          </h5>
+          <p
+            class="text-slate-700 text-justify mb-10 group-hover:text-sky-700 selection:bg-lime-300 selection:text-black"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            delectus atque fuga. Tempora dolorum laudantium quia velit qui ad,
+            unde illo voluptatem, quas quidem architecto ducimus maiores
+            deleniti nostrum iusto! Possimus inventore quasi sed! Ab minus
+            fugiat labore sequi nesciunt, rem tempore quod sint magnam quas
+            sapiente, fuga fugit omnis, assumenda perspiciatis? Eum sed alias
+            laborum saepe hic, nulla dolore.
+          </p>
+          <button
+            class="w-full bg-sky-500 px-5 py-2 rounded-full text-white font-semibold block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300 selection:bg-lime-300 selection:text-black"
+          >
+            Login
+          </button>
+        </div>
+        <div class=" max-w-lg border border-slate-200 rounded-xl mx-auto
+        shadow-md px-5 pt-5 mb-10"" >
+        <form action="">
+          <label for="email">
+            <span
+              class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-500 after:ml-0.5"
+              >Email</span
+            >
+            <input
+              type="email"
+              id="email"
+              placeholder="masukkan email.."
+              class="px-3 py-2 shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-sky-500 invalid:text-pink-700 invalid:focus:outline-pink-700 peer"
+            />
+            <p class="text-sm m-3 text-pink-700 invisible peer-invalid:visible">
+              Email tidak valid
+            </p>
+          </label>
+        </form>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+          laudantium libero repellat voluptatibus eum exercitationem ipsa sint
+          iure impedit esse repudiandae excepturi nobis, vel incidunt possimus,
+          quis aperiam ullam nostrum? Repellendus corrupti, adipisci qui soluta
+          quis culpa necessitatibus nisi, inventore minima expedita assumenda
+          dignissimos possimus dicta unde consequatur quibusdam impedit quisquam
+          explicabo deleniti repellat omnis nulla velit laudantium? Aliquid,
+          debitis! Omnis animi possimus deleniti vel minus, recusandae illum
+          eaque? Possimus adipisci ducimus, dolores reiciendis quo voluptas
+          minus facere omnis aliquam debitis incidunt eaque a delectus ut.
+          Quisquam minima cumque fuga. Quos illum fugit alias animi rem qui modi
+          commodi voluptas, laboriosam distinctio repudiandae aspernatur eum
+          voluptatum cumque architecto at labore quidem pariatur fugiat, eveniet
+          minus ab neque reprehenderit itaque! Eveniet! Sit odit suscipit libero
+          labore excepturi quam natus, eum vitae nihil necessitatibus. Eaque
+          ducimus, autem illum nobis est expedita harum laborum nisi ipsam?
+          Cumque beatae ea consectetur sequi vitae perferendis?
+        </p>
+        <p class="b-4 italic font-thin text-slate-500 px-10 my-15 text-xl">
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+          reprehenderit saepe dicta voluptatem impedit quidem distinctio laborum
+          veniam ipsa explicabo consequatur reiciendis cum accusantium
+          voluptatum nisi nam, animi possimus quo. Assumenda similique rerum
+          natus, nisi non sit explicabo hic fuga consequatur praesentium rem
+          molestiae, quaerat ratione voluptate qui, aperiam nulla eum illum
+          aliquid id! Eligendi obcaecati enim beatae autem voluptates"
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

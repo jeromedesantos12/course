@@ -1,0 +1,44 @@
+body {
+  font-family: "calibri", "san-serif";
+  /* background-color: #fbf3b9; */
+}
+
+h1 {
+  font-size: 6em;
+  text-align: center;
+  color: #b7b1f2;
+}
+
+nav {
+  font-size: 1.5em;
+}
+
+ul,
+li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    color: #fdb7ea;
+  }
+}
+/* @media screen and (max-width: 800px) {
+  h1 {
+    color: #ffdccc;
+  }
+}
+@media screen and (max-width: 1200px) {
+  h1 {
+    color: #fbf3b9;
+  }
+} */
+@media screen and (orientation: landscape) {
+  body {
+    background-color: #b7b1f2;
+  }
+}
+/* max-width: berubah pink 0 <- 500 -- 1000 */
+/* min-width: 0 -- 500 -> 1000 berubah pink */

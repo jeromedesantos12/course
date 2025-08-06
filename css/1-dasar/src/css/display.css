@@ -1,0 +1,15 @@
+h1 {
+  background-color: aquamarine;
+  border: 2px solid black;
+  display: inline-block;
+}
+span {
+  background-color: salmon;
+  border: 2px solid black;
+  /* margin/padding di inline tidak dapat diubah kecuali kiri-kanan */
+}
+
+/* inline-blok: posisi sama dengan inline (kiri-kanan)
+tapi bisa diubah margin dan padding */
+
+/* kalo none: dia disembunyikan saja tampilannya */

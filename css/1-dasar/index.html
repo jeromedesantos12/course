@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Tutorial</title>
+    <!-- Eksternal element -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <!-- Style element -->
+    <style>
+      h1.elmnt {
+        color: red;
+      }
+      button.elmnt {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline style: "tdk disarankan karena hanya bisa 1 element" -->
+    <h1 style="color: red">CSS Tutorial</h1>
+    <button style="background-color: blue; color: white">Klik Saya</button>
+    <hr />
+    <!-- Style element: "tdk disarankan karena hanya bisa 1 file html-->
+    <h1 class="elmnt">CSS Tutorial</h1>
+    <button class="elmnt">Klik Saya</button>
+    <hr />
+    <!-- Eksternal element: "disarankan karena bisa digunakan di banyak file html" -->
+    <h1 class="E-elmnt">CSS Tutorial</h1>
+    <button class="E-elmnt">Klik Saya</button>
+  </body>
+</html>

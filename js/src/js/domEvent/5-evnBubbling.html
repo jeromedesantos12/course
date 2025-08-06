@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="5-evnBubbling.js" defer></script>
+    <title>Event</title>
+  </head>
+  <body>
+    <h1>EventBubbling</h1>
+    <!-- dia akan terjadi event bubbling! -->
+    <p onClick="alert(`paragraph click`)">
+      <!-- setelah button di klik, maka alert di paragraf akan ikutan dieksekusi -->
+      <button onClick="alert(`button click`)">Click</button>
+    </p>
+
+    <hr />
+    <!-- cara mengatasinya -->
+    <div id="container">
+      Click to hide
+      <button id="changeColor">Change Color</button>
+    </div>
+    <!-- cek di file js -->
+  </body>
+</html>

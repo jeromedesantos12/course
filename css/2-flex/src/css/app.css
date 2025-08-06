@@ -1,0 +1,52 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  font-size: 4rem;
+  letter-spacing: 4rem;
+}
+div:nth-of-type(1) {
+  background-color: #00b4d8;
+  align-self: flex-start;
+}
+div:nth-of-type(2) {
+  background-color: #0096c7;
+  align-self: center;
+}
+div:nth-of-type(3) {
+  background-color: #0077b6;
+  align-self: flex-end;
+}
+div:nth-of-type(4) {
+  background-color: #023e8a;
+  align-self: center;
+}
+div:nth-of-type(5) {
+  background-color: #03045e;
+  align-self: flex-start;
+}
+h1 {
+  text-align: center;
+}
+#container {
+  background-color: #003049;
+  width: 90%;
+  height: 500px;
+  border: 5px solid #003049;
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  /* align-content: space-between; */
+  /* flex-wrap: wrap; */
+  margin: auto;
+}
+#container div {
+  width: 400px;
+  height: 200px;
+  font-size: 5em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

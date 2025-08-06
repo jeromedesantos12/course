@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Home</h1>
+
+    {{! array harus di looping dulu -> pake format hbs }}
+    {{#each data}}
+      <p>{{this.title}}
+        -
+        <a href="/portfolio/{{this.id}}">click here</a></p>
+    {{/each}}
+
+    {{! sama seperti looping biasa }}
+    {{! for (let i = 0; i < data.length; i++){
+    data[i].id
+    data[i].title
+    } }}
+    <a href="/contact">Click Here</a>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+
+body {
+  font-family: "Pokemon Solid", sans-serif;
+  -webkit-text-stroke: 0.1em #ffff;
+  paint-order: stroke fill;
+  color: #3b4cca;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: url(../../assets/img/cloud.jpg);
+  background-size: contain;
+  text-align: center;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+h1 {
+  -webkit-text-stroke: 0.2em #3b4cca;
+  paint-order: stroke fill;
+  color: #ffffff;
+  margin: 1em 0;
+  letter-spacing: 0.15em;
+}
+
+h1 > b {
+  color: #ffde00;
+  filter: brightness(0%);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  filter: brightness(0%);
+}
+
+.pokemon {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.5em;
+}
+
+.pokemon img {
+  display: block;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  filter: brightness(0%);
+}
