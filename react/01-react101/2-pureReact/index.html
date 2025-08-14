@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <!-- container -->
+    <div id="root"></div>
+    <!-- sintax react dom -->
+    <script type="text/babel">
+      // components
+      function MyApp() {
+        // agar ui dapat bergerak dinamis sesuai waktu sekarang
+        const [time, setTime] = React.useState(new Date().toLocaleTimeString()); // [ getter, setter ]
+
+        // react akan melakukan perubahan ui setiap ada perubahan di dalam statenya
+        React.useEffect(function () {
+          setInterval(() => setTime(new Date().toLocaleTimeString()), 1000); // update tiap 1 detik
+        }, []);
+
+        // return <p>Jam: {time}</p>;
+        // akan di render browser jadi:
+        return React.createElement(
+          "p", // type
+          null, // props
+          `Jam: ${time}` // children
+        );
+      }
+
+      // wadah agar react bisa memanipulasi ui
+      const container = document.getElementById("root");
+      // render components di root
+      const root = ReactDOM.createRoot(container);
+      root.render(<MyApp />);
+    </script>
+  </body>
+</html>

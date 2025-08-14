@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 2rem;
+      }
+      button:disabled {
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="quote">Loading...</h1>
+    <h2 id="author"></h2>
+    <button id="generateBtn">Generate</button>
+
+    <script>
+      const quoteEl = document.getElementById("quote");
+      const authorEl = document.getElementById("author");
+      const buttonEl = document.getElementById("generateBtn");
+
+      async function getQuote() {
+        buttonEl.disabled = true;
+        buttonEl.textContent = "Loading...";
+
+        try {
+          const res = await fetch("https://dummyjson.com/quotes/random");
+          const data = await res.json();
+          quoteEl.textContent = data.quote;
+          authorEl.textContent = data.author;
+        } catch (err) {
+          console.error("Failed to fetch quote:", err);
+          quoteEl.textContent = "Oops, something went wrong.";
+          authorEl.textContent = "System";
+        } finally {
+          buttonEl.disabled = false;
+          buttonEl.textContent = "Generate";
+        }
+      }
+
+      // Run once when page loads
+      window.addEventListener("DOMContentLoaded", getQuote);
+
+      // Run when button is clicked
+      buttonEl.addEventListener("click", getQuote);
+    </script>
+  </body>
+</html>
