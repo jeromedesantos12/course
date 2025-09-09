@@ -1,12 +1,44 @@
-# React + Vite
+# Aplikasi Catatan Sederhana
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ini adalah aplikasi web sederhana untuk membuat dan menghapus catatan, dibangun menggunakan React dan Vite.
 
-Currently, two official plugins are available:
+## Alur Kerja & Kaitan Kode
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Logika utama aplikasi ini berada di dalam file `src/App.jsx`.
 
-## Expanding the ESLint configuration
+1.  **Penyimpanan Data**: Semua catatan disimpan dalam sebuah _state_ React bernama `notes` yang merupakan sebuah array.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    ```javascript
+    const [notes, setNotes] = useState([]);
+    ```
+
+2.  **Menambah Catatan**:
+
+    - Pengguna mengetik catatan baru di kolom input. Setiap ketikan akan disimpan dalam _state_ `inputNote` melalui fungsi `handleInputChange`.
+    - Saat tombol "Add" ditekan, fungsi `handleSubmit` akan dipanggil.
+    - Fungsi ini menambahkan catatan baru sebagai sebuah objek ke dalam array `notes` dan mengosongkan kembali kolom input.
+
+3.  **Menghapus Catatan**:
+
+    - Di samping setiap catatan, ada tombol "Delete".
+    - Saat tombol ini ditekan, fungsi `handleDeleteNote` akan dijalankan.
+    - Fungsi ini akan mencari catatan mana yang akan dihapus berdasarkan `id`-nya, lalu membuat ulang array `notes` tanpa catatan tersebut.
+
+4.  **Tampilan Antarmuka (UI)**:
+    - Tampilan daftar catatan akan selalu diperbarui secara otomatis setiap kali ada perubahan pada _state_ `notes` (baik saat menambah atau menghapus).
+    - Proses ini dilakukan dengan metode `.map()` pada array `notes` untuk me-render setiap item catatan ke dalam list di layar.
+
+## Menjalankan Aplikasi
+
+1.  **Install dependensi:**
+    ```bash
+    npm install
+    # atau
+    yarn install
+    ```
+2.  **Jalankan mode development:**
+    ```bash
+    npm run dev
+    # atau
+    yarn dev
+    ```

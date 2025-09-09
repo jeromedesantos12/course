@@ -1,28 +1,46 @@
-## Proses Kerja Kode Secara Sederhana
+# React + Vite
 
-1. Komponen Utama: Accordion (Tirai Besar)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-   - Komponen Accordion menerima sebuah array bernama faqs, yang berisi daftar pertanyaan dan jawaban.
-   - Di dalam komponen ini, ada sebuah "pengingat" yang disebut isOpen. Pengingat ini berfungsi untuk mencatat nomor tirai mana (atau item) yang sedang terbuka. Awalnya, tidak ada yang terbuka, jadi nilainya null (tidak ada).
-   - Komponen ini kemudian memanggil dan membuat tirai kecil satu per satu (AccordionItem) untuk setiap pertanyaan dalam daftar faqs.
-   - Saat membuat setiap tirai kecil, ia memberikan beberapa informasi penting ke dalamnya:
-     - getOpen: "Pengingat" isOpen dari tirai besar, jadi tirai kecil tahu nomor tirai mana yang sedang terbuka.
-     - setOpen: Sebuah "tombol" khusus yang bisa digunakan oleh tirai kecil untuk mengubah status "pengingat" isOpen pada tirai besar.
+Currently, two official plugins are available:
 
-2. Komponen Anak: AccordionItem (Tirai-tirai Kecil)
-   - Setiap AccordionItem adalah satu tirai kecil yang mewakili satu pertanyaan dan jawaban.
-   - Ia menerima nomornya sendiri (number) dan "pengingat" getOpen dari tirai besar.
-   - Ia kemudian memeriksa: "Apakah nomor saya sama dengan nomor yang tercatat di pengingat getOpen?" Jika jawabannya true, artinya tirai ini sedang terbuka (isOpen).
-   - Ada sebuah fungsi bernama handleToogle yang akan dijalankan ketika tirai ini diklik. Fungsi ini adalah bagian paling penting:
-     - Jika tirai ini sedang terbuka (isOpen-nya true), ia akan memanggil "tombol" setOpen dengan nilai null. Ini seperti menutup tirai dan bilang ke tirai besar, "Hei, sekarang tidak ada lagi yang terbuka!"
-     - Jika tirai ini tidak terbuka, ia akan memanggil "tombol" setOpen dengan nomornya sendiri (number). Ini seperti membuka tirai dan bilang ke tirai besar, "Hei, sekarang saya (nomor ini) yang sedang terbuka!"
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Alur Singkat Saat Pengguna Mengklik Sesuatu
+## Alur Kerja Aplikasi Accordion
 
-1. Pengguna mengklik salah satu tirai kecil (AccordionItem).
-2. Fungsi handleToogle di dalam tirai kecil itu berjalan.
-3. Fungsi ini memanggil "tombol" setOpen milik tirai besar (Accordion), mengubah "pengingat" isOpen-nya.
-4. Karena "pengingat" isOpen berubah, React akan memperbarui tampilan seluruh tirai, termasuk semua tirai kecil di dalamnya.
-5. Setiap tirai kecil akan memeriksa kembali "pengingat" isOpen yang baru. Hanya satu tirai yang nomornya cocok dengan nilai isOpen yang akan menampilkan konten jawabannya. Tirai lainnya akan tetap tertutup.
+Aplikasi ini adalah implementasi sederhana dari komponen accordion di React. Tujuan utamanya adalah untuk menampilkan daftar pertanyaan dan jawaban di mana hanya satu item yang bisa terbuka pada satu waktu.
 
-Proses ini memungkinkan hanya satu item yang bisa terbuka pada satu waktu, persis seperti mekanisme tirai lipat yang efisien.
+### Struktur Komponen
+
+- **`App.jsx`**: Komponen utama yang menjadi titik masuk aplikasi.
+- **`Accordion.jsx`**: Komponen induk yang mengatur logika state untuk membuka dan menutup item accordion.
+- **`AccordionItem.jsx`**: Komponen anak yang menampilkan satu pertanyaan dan jawaban.
+- **`faqs.json`**: File data yang berisi daftar pertanyaan dan jawaban dalam format JSON.
+
+### Logika dan Alur Data
+
+1.  **Inisialisasi**:
+    - Komponen `Accordion` mengambil data `faqs` sebagai *props*.
+    - Di dalam `Accordion`, sebuah *state* bernama `isOpen` diinisialisasi dengan nilai `null`. *State* ini berfungsi untuk melacak item mana yang sedang terbuka.
+
+2.  **Render Item**:
+    - `Accordion` melakukan *mapping* (perulangan) pada data `faqs`.
+    - Untuk setiap item dalam `faqs`, komponen `AccordionItem` dirender.
+    - Setiap `AccordionItem` menerima beberapa *props* penting:
+        - `number`: Nomor indeks item, untuk identifikasi.
+        - `getOpen`: Nilai dari *state* `isOpen` di `Accordion`.
+        - `setOpen`: Fungsi untuk memperbarui *state* `isOpen` di `Accordion`.
+
+3.  **Interaksi Pengguna**:
+    - Di dalam `AccordionItem`, ada fungsi `handleToggle` yang dijalankan saat pengguna mengklik sebuah pertanyaan.
+    - Fungsi ini memeriksa apakah item yang diklik saat ini sudah terbuka (yaitu, jika `getOpen === number`).
+        - **Jika sudah terbuka**: `handleToggle` akan memanggil `setOpen(null)`, yang memberitahu `Accordion` untuk menutup semua item.
+        - **Jika tertutup**: `handleToggle` akan memanggil `setOpen(number)`, yang memberitahu `Accordion` untuk membuka item dengan nomor tersebut.
+
+4.  **Pembaruan Tampilan**:
+    - Ketika `setOpen` dipanggil, *state* `isOpen` di komponen `Accordion` diperbarui.
+    - Perubahan *state* ini memicu React untuk me-*render* ulang komponen `Accordion` dan semua `AccordionItem` di dalamnya.
+    - Setiap `AccordionItem` kembali memeriksa nilai `getOpen`. Hanya item yang nomornya cocok dengan `getOpen` yang akan menampilkan jawabannya, sementara yang lain akan tetap tersembunyi.
+
+Dengan alur ini, `Accordion` bertindak sebagai "pemegang kendali" tunggal (*single source of truth*) untuk status terbuka/tertutup, memastikan hanya satu item yang bisa aktif pada satu waktu.
