@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "fa-facebook-f",
+    "link": "https://facebook.com/blackcat.id"
+  },
+  {
+    "icon": "fa-instagram",
+    "link": "https://instagram.com/blackcat.id"
+  },
+  {
+    "icon": "fa-x-twitter",
+    "link": "https:/x.com/blackcat_id"
+  },
+  {
+    "icon": "fa-linkedin-in",
+    "link": "https://linkedin.com/in/blackcat-id"
+  },
+  {
+    "icon": "fa-github",
+    "link": "https://github.com/blackcat-id"
+  }
+]
