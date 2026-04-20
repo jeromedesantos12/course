@@ -1,0 +1,453 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	line-height: 1;
+	background-color:white;
+}
+
+@font-face {
+   font-family: "timesnewroman";
+   src: url('font/times.ttf');
+}
+
+@font-face {
+   font-family: "tahoma";
+   src: url('font/tahoma.ttf');
+}
+
+@font-face {
+   font-family: "tahomabd";
+   src: url('font/tahomabd.ttf');
+}
+
+@font-face {
+   font-family: "century";
+   src: url('font/century.ttf');
+}
+
+#bungkus-00{
+	width: 1050px;
+	margin: auto;
+
+}
+
+#bungkus-01{
+	width: 1050px;
+	height: 130px;
+	text-align: center;
+	border-bottom: 5px solid black;
+
+}
+
+#logo{
+	height: 80px;
+	padding-top: 30px;
+	float:left;
+	margin-left: 30px;
+	margin-right: 290px;
+	margin-top: 10px;
+	text-align: left;
+	border-top: 5px solid black;
+
+}
+
+			.link-00{
+				font-family: timesnewroman;
+				font-weight: bold;
+				font-size: 22px;
+				font-style: italic;
+					
+					text-decoration:none;
+					color: black;
+					transition: all .5s ease;
+			
+			}
+
+			.link-00:hover {
+				color: lightseagreen;
+				transition: all .5s ease;
+			}
+			
+.textbox-00{
+	font-family: tahoma;
+	font-style: italic;
+	font-size: 10px;
+	margin-top: 5px;
+	font-weight:normal;
+	color:grey;
+
+}
+
+#bungkus-02{
+	height: 125px;
+	float: left;
+	padding-right: 10px;
+
+}
+
+.navigasi-01 {
+	width: 120px;
+	height: 70px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-top: 40px;
+	text-align:center;
+	border-top: 5px solid black;
+	
+}
+
+.navigasi-02 {
+	width: 120px;
+	height: 70px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-top: 40px;
+	text-align:center;
+	border-top: 5px solid white;
+	transition: all .5s ease;
+	
+}
+
+.navigasi-02:hover {
+	border-top: 5px solid lightseagreen;
+	transition: all .5s ease;
+}
+
+			.link-01{
+				font-family: tahomabd;
+				font-weight: bold;
+				font-size: 10px;
+				text-decoration:none;
+				color: black;
+				transition: all .5s ease;
+								
+			}
+
+			.link-01:hover {	
+				color: lightseagreen;
+				transition: all .5s ease;
+			}
+	
+#bungkus-03{
+	width: 700px;
+	margin-top: 20px;
+	float:left;
+		
+}	
+	
+	
+#gambar-00{
+	width: 700px;
+	height: 300px;
+	float:left;
+	background-image:URL("img/product/isi/acid/acid-00.jpg");
+			
+}	
+
+.papan-00{
+	width: 700px;
+	height: 25px;
+	float:left;
+	padding-top: 25px;
+	text-decoration:none;
+	background-color: silver;
+	transition: all .5s ease;
+}	
+
+			.papan-00:hover{
+				transition: all .5s ease;
+				background-color: lightseagreen;
+			}	
+
+			.judul-00{
+				font-family: tahomabd;
+				font-weight: bold;
+				font-size: 30px;
+				color: white;
+				text-align: right;
+			}
+
+#lembar-00{
+	width: 700px;		
+	float:left;
+				
+	
+}
+
+			#lembar-01{
+				width: 270px;
+				margin-top: 20px;
+				margin-left: 20px;
+				margin-bottom: 20px;
+				float:left;
+							
+			}
+				
+			#text-01{
+				width: 270px;
+				font-family: tahoma;
+				font-size: 15px;
+				text-align:justify;
+				line-height: 20px;
+				text-indent: 150px;
+				float:left;
+							
+			}
+		
+			#text-02{
+				width: 200px;
+				font-family: tahomabd;
+				font-size: 15px;
+				text-align:left;
+				line-height:20px;
+				float:right;
+				margin-top: 20px;
+				font-weight: bold;
+				color:grey;
+							
+			}
+		
+			#lembar-02{
+				width: 370px;
+				height: 370px;
+				margin-top: 20px;
+				margin-left: 20px;
+				margin-bottom: 20px;
+				float:left;
+						
+			}		
+
+			#foto-01{
+				width: 180px;
+				height: 180px;
+				float:left;
+				border-radius:100%;
+				margin-right: 10px;
+				background-image:URL("img/product/isi/acid/acid-01.jpg");
+							
+			}
+			
+			#foto-02{
+				width: 180px;
+				height: 180px;
+				float:left;
+				border-radius:100%;
+				background-image:URL("img/product/isi/acid/acid-02.jpg");
+							
+			}
+			
+			#foto-03{
+				width: 180px;
+				height: 180px;
+				float:left;	
+				margin-top: 10px;
+				margin-right: 10px;
+				border-radius:100%;
+				background-image:URL("img/product/isi/acid/acid-03.jpg");
+							
+			}
+			
+			#foto-04{
+				width: 180px;
+				height: 180px;
+				float:left;
+				margin-top: 10px;
+				border-radius:100%;
+				background-image:URL("img/product/isi/acid/acid-04.jpg");
+							
+			}
+
+#bungkus-04{
+	width: 330px;
+	float:right;
+	
+}		
+
+.fb{
+	width:330px; 
+	height:450px; 
+	
+}	
+			
+		#lembar-03{
+			width: 330px;
+			height: 400px;
+			margin-top: 20px;
+			float:left;
+		}
+		
+#bungkus-12{
+	width: 1050px;
+	margin-top: 20px;
+	float: left;
+	font-family: century;
+	padding-top: 20px;
+	font-size: 10px;
+	text-align:center;
+	border-top: 5px solid black;
+	
+}
+
+#atribut-01{
+	float:left;
+}
+
+#atribut-02{
+	float:right;
+}
+
+			.link-05{	
+				text-decoration:none;
+				color: black;
+				transition: all .5s ease;
+			}
+
+			.link-05:hover {	
+				color: lightseagreen;
+				transition: all .5s ease;
+			}
+	
+
+#scroll{
+	width:50px;
+	height:50px;
+	background-color: silver;	
+	border-radius:100%;
+	transition: all .5s ease;
+	
+		position:fixed; 
+		bottom:10px; 
+		right:10px;
+}
+
+			#scroll:hover{
+				background-color: lightseagreen;
+				transition: all .5s ease;
+			}
+			
+			.img-04{
+				width:50px;
+				height:50px;
+				border-radius:100%;
+				float:left;
+				background-image:URL("img/icon/scroll.png");
+			}
+	
+@media screen and (max-width: 1000px) {
+
+.fb{
+	display:none;
+}
+
+#bungkus-01{
+	height: 400px;
+}
+
+#logo{
+	width: 970px;
+	height: 200px;
+	margin-left:20px;
+	padding-right:20px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+
+				.link-00{
+						font-size: 100px;
+						}
+				
+				.textbox-00{
+						margin-top:20px;
+						font-size: 40px;
+						}
+
+#bungkus-02{
+	width: 1000px;
+	margin-left: 20px;
+}
+
+.navigasi-01{
+	width: 240px;
+}
+
+.navigasi-02{
+	width: 240px;
+}
+		
+				.link-01{
+						font-size: 40px;
+				}
+
+#bungkus-03{
+	width: 1050px;
+}
+
+#lembar-00{
+	width:1050px;
+	
+}
+
+#gambar-00{
+	width:1050px;
+	background-image:URL("img2/cover/acid-00.jpg");
+}
+
+.papan-00{
+	width: 1050px;
+	height: 60px;
+}
+
+.judul-00{
+	font-size: 80px;
+}
+
+#lembar-01{
+	width: 1000px;
+}
+
+			#text-01{
+				width: 1000px;
+				height:200px;
+				font-size: 40px;
+				line-height:50px;
+				text-indent: 350px;
+			}
+			
+			#text-02{
+				margin-top:50px;
+				width: 400px;
+				height: 450px;
+				font-size: 40px;
+				line-height:50px;
+			}
+
+#lembar-02{
+	margin-top:-450px;
+	margin-left: 100px;
+}
+
+#bungkus-04{
+	display:none;
+}
+
+.link-05{
+	font-size: 25px;
+}
+
+		
+#scroll{
+	width:200px;
+	height:200px;
+}
+
+.img-04{
+	width:200px;
+	height:200px;
+	background-image:URL("img2/icon/scroll.png");
+}
+}

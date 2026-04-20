@@ -1,0 +1,494 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	line-height: 1;
+	background-color:white;
+}
+
+@font-face {
+   font-family: "timesnewroman";
+   src: url('font/times.ttf');
+}
+
+@font-face {
+   font-family: "tahoma";
+   src: url('font/tahoma.ttf');
+}
+
+@font-face {
+   font-family: "tahomabd";
+   src: url('font/tahomabd.ttf');
+}
+
+@font-face {
+   font-family: "century";
+   src: url('font/century.ttf');
+}
+
+#bungkus-00{
+	width: 1050px;
+	margin: auto;
+
+}
+
+#bungkus-01{
+	width: 1050px;
+	height: 130px;
+	text-align: center;
+	border-bottom: 5px solid black;
+
+}
+
+#logo{
+	height: 80px;
+	padding-top: 30px;
+	float:left;
+	margin-left: 30px;
+	margin-right: 290px;
+	margin-top: 10px;
+	text-align: left;	
+	border-top: 5px solid black;
+
+}
+
+			.link-00{
+				font-family: timesnewroman;
+				font-weight: bold;
+				font-size: 22px;
+				font-style: italic;	
+				text-decoration:none;
+				color: black;
+				transition: all .5s ease;
+
+			}
+
+			.link-00:hover {
+				color: lightseagreen;
+				transition: all .5s ease;
+			}
+			
+.textbox-00{
+	font-family: tahoma;
+	font-style: italic;
+	font-size: 10px;
+	margin-top: 5px;			
+	color:grey;
+
+}
+
+#bungkus-02{
+	height: 125px;
+	float: left;
+	padding-right: 10px;
+
+}
+
+.navigasi-01 {
+	width: 120px;
+	height: 70px;		
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-top: 40px;
+	text-align:center;
+	border-top: 5px solid black;
+
+}
+
+.navigasi-02 {
+	width: 120px;
+	height: 70px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-top: 40px;
+	text-align:center;
+	border-top: 5px solid white;
+	transition: all .5s ease;
+
+}
+
+.navigasi-02:hover {
+	border-top: 5px solid lightseagreen;
+	transition: all .5s ease;
+}
+
+			.link-01{
+				font-family: tahomabd;
+				font-weight: bold;
+				font-size: 10px;
+				text-decoration:none;
+				color: black;
+				transition: all .5s ease;
+
+			}
+
+			.link-01:hover {	
+				color: lightseagreen;
+				transition: all .5s ease;
+			}
+	
+#bungkus-03{
+	width: 1030px;
+	height: 610px;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right:10px;
+	float: left;
+
+}	
+
+			.img-00{
+				text-decoration:none;
+				width: 1030px;
+				height: 500px;
+				float:left;
+			}
+		
+.kotak-00{
+	width: 1050px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	margin-top: 15px;
+	float:left;
+
+}
+
+.line-00{
+	width: 180px;
+	height:20px;
+	padding:10px;
+	margin-left: 420px;
+	text-align:center;
+	border-bottom: 5px solid silver;
+
+
+}
+
+			.link-02{
+				font-family: tahomabd;
+				font-weight: bold;
+				font-size: 20px;		
+				text-decoration:none;
+				color: black;
+				transition: all .5s ease;
+
+			}
+
+			.link-02:hover {	
+				color: lightseagreen;
+				transition: all .5s ease;
+			}
+
+			
+#bungkus-04{
+	width: 1050px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: left;
+
+}
+
+.kotak-01{
+	width: 200px;			
+	float: left;
+	margin-right: 10px;
+	margin-left: 28px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align:center;
+	transition: all 0.5s ease;
+
+}
+
+			.link-03{
+				font-family: tahomabd;
+				font-weight: bold;
+				font-size: 20px;
+
+				
+					text-decoration:none;
+					color: black;
+					transition: all .5s ease;
+			}
+
+			.link-03:hover {	
+				color: lightseagreen;
+				transition: all .5s ease;
+			}
+	
+	
+.lingkaran-01{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 20px;
+	border-radius: 100%;		
+	background-image: URL("img/product/sampul/sweetener.jpg");
+	transition: all .5s ease;
+
+}
+
+			.lingkaran-01:hover{
+			background-image: URL("img/product/sampul/sweetener-.jpg");
+			transition: all .5s ease;
+			}
+
+.lingkaran-02{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 20px;
+	border-radius: 100%;
+	background-image: URL("img/product/sampul/preservative.jpg");
+	transition: all .5s ease;
+
+}
+
+			.lingkaran-02:hover{
+			background-image: URL("img/product/sampul/preservative-.jpg");
+			transition: all .5s ease;
+			}
+
+.lingkaran-03{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 20px;
+	border-radius: 100%;
+	background-image: URL("img/product/sampul/acid.jpg");
+	transition: all .5s ease;
+
+}
+
+			.lingkaran-03:hover{
+			background-image: URL("img/product/sampul/acid-.jpg");
+			transition: all .5s ease;
+			}
+			
+.lingkaran-04{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 20px;
+	border-radius: 100%;			
+	background-image: URL("img/product/sampul/thickener.jpg");
+	transition: all .5s ease;
+
+}
+
+			.lingkaran-04:hover{
+			background-image: URL("img/product/sampul/thickener-.jpg");
+			transition: all .5s ease;
+			}
+
+		.img-01{
+			text-decoration:none;
+			width: 200px;
+			height: 200px;
+			margin-bottom: 20px;
+			border-radius: 100%;
+			float:left;	
+			}
+
+.textbox-01{
+	font-family: tahoma;
+	font-size: 10px;
+	margin-top: 10px;
+	font-weight:normal;
+	color:black;
+
+}
+
+
+#bungkus-06{
+	width: 1050px;
+	margin-top: 20px;
+	float: left;
+	font-family: century;
+	padding-top: 20px;
+	font-size: 10px;
+	text-align:center;
+	border-top: 5px solid black;
+
+}
+
+#atribut-01{
+	float:left;
+}
+
+#atribut-02{
+	float:right;
+}
+
+			.link-05{
+				text-decoration:none;
+				color: black;
+				transition: all .5s ease;
+
+			}
+
+			.link-05:hover {	
+				color: lightseagreen;
+				transition: all .5s ease;
+			}
+	
+#scroll{
+	width:50px;
+	height:50px;
+	background-color: silver;	
+	border-radius:100%;
+	transition: all .5s ease;
+	
+		position:fixed; 
+		bottom:10px; 
+		right:10px;
+}
+
+			#scroll:hover{
+				background-color: lightseagreen;
+				transition: all .5s ease;
+			}
+		
+			.img-04{
+				width:50px;
+				height:50px;
+				border-radius:100%;
+				float:left;
+				background-image:URL("img/icon/scroll.png");
+			}
+	
+@media screen and (max-width: 1000px) {
+
+#bungkus-01{
+	height: 400px;
+}
+
+#logo{
+	width: 970px;
+	height: 200px;
+	margin-left:20px;
+	padding-right:20px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+
+				.link-00{
+						font-size: 100px;
+						}
+				
+				.textbox-00{
+						margin-top:20px;
+						font-size: 40px;
+						}
+
+#bungkus-02{
+	width: 1000px;
+	margin-left: 20px;
+}
+
+.navigasi-01{
+	width: 240px;
+}
+
+.navigasi-02{
+	width: 240px;
+}
+		
+				.link-01{
+						font-size: 40px;
+				}
+		
+.line-00{
+	width: 450px;
+	height: 40px;
+	margin-left: 300px;
+}
+		
+				.link-02{
+						font-size: 40px;
+				}
+
+.kotak-01{
+	width: 460px;
+	margin-bottom:50px;
+}
+	
+				.lingkaran-01{
+						width: 450px;
+						height: 450px;
+						margin-bottom: 50px;
+						background-image: URL("img2/product/sweetener.jpg");
+				}
+				
+										.lingkaran-01:hover{
+												background-image: URL("img2/product/sweetener-.jpg");
+										}
+					
+				.lingkaran-02{
+						width: 450px;
+						height: 450px;
+						margin-bottom: 50px;
+						background-image: URL("img2/product/preservative.jpg");
+				}
+				
+										.lingkaran-02:hover{
+												background-image: URL("img2/product/preservative-.jpg");
+										}
+
+				.lingkaran-03{
+						width: 450px;
+						height: 450px;
+						margin-bottom: 50px;
+						background-image: URL("img2/product/acid.jpg");
+				}
+				
+										.lingkaran-03:hover{
+												background-image: URL("img2/product/acid-.jpg");
+										}
+				
+				.lingkaran-04{
+						width: 450px;
+						height: 450px;
+						margin-bottom: 50px;
+						background-image: URL("img2/product/thickener.jpg");
+				}
+				
+										.lingkaran-04:hover{
+												background-image: URL("img2/product/thickener-.jpg");
+										}
+				
+				.img-01{
+						width: 450px;
+						height: 450px;
+				}
+				
+				.link-03{
+						font-size:40px;
+				}
+
+				.textbox-01{
+						font-size:30px;
+				}
+				
+
+.link-05{
+	font-size: 25px;
+}
+		
+#scroll{
+	width:200px;
+	height:200px;
+}
+
+.img-04{
+	width:200px;
+	height:200px;
+	background-image:URL("img2/icon/scroll.png");
+}
+
+#bungkus-06{
+	margin-top:0px;
+}
+}

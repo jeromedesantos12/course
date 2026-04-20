@@ -1,0 +1,364 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	line-height: 1;
+	background-color:white;
+}
+
+@font-face {
+   font-family: "timesnewroman";
+   src: url('font/times.ttf');
+}
+
+@font-face {
+   font-family: "tahoma";
+   src: url('font/tahoma.ttf');
+}
+
+@font-face {
+   font-family: "tahomabd";
+   src: url('font/tahomabd.ttf');
+}
+
+@font-face {
+   font-family: "century";
+   src: url('font/century.ttf');
+}
+
+#bungkus-00{
+	width: 1050px;
+	margin: auto;
+		
+}
+
+#bungkus-01{
+	width: 1050px;
+	height: 130px;
+	text-align: center;
+	border-bottom: 5px solid black;
+			
+}
+
+#logo{
+	height: 80px;
+	padding-top: 30px;
+	float:left;
+	margin-left: 30px;
+	margin-right: 290px;
+	margin-top: 10px;
+	text-align: left;
+	border-top: 5px solid black;
+		
+}
+
+			.link-00{
+				font-family: timesnewroman;
+				font-weight: bold;
+				font-size: 22px;
+				font-style: italic;		
+				text-decoration:none;
+				color: black;
+				transition: all .5s ease;
+			
+			}
+
+			.link-00:hover {
+				color: lightseagreen;
+				transition: all .5s ease;
+			}
+			
+.textbox-00{
+	font-family: tahoma;
+	font-style: italic;
+	font-size: 10px;			
+	margin-top: 5px;
+	font-weight:normal;
+	color:grey;
+
+}
+
+#bungkus-02{
+	height: 125px;
+	float: left;			
+	padding-right: 10px;
+
+}
+
+.navigasi-01 {
+	width: 120px;
+	height: 70px;	
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-top: 40px;
+	text-align:center;
+	border-top: 5px solid black;
+
+}
+
+.navigasi-02 {
+	width: 120px;
+	height: 70px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-top: 40px;
+	text-align:center;
+	border-top: 5px solid white;
+	transition: all .5s ease;
+		
+}
+
+.navigasi-02:hover {
+	border-top: 5px solid lightseagreen;
+	transition: all .5s ease;
+}
+
+			.link-01{
+				font-family: tahomabd;
+				font-weight: bold;
+				font-size: 10px;
+				text-decoration:none;
+				color: black;
+				transition: all .5s ease;
+					
+			}
+
+			.link-01:hover {	
+				color: lightseagreen;
+				transition: all .5s ease;
+			}
+	
+	
+#bungkus-03{
+	width: 1050px;
+	height: 350px;
+	margin-top: 20px;
+	float:left;
+		
+}	
+
+#telp-01{
+	margin-top: 100px;
+	margin-left: 90px;
+	float:left;
+	background-color: silver;
+	font-weight:bold;
+	padding:10px;
+	
+			font-family: tahomabd;
+			font-size: 100px;
+			color: white;
+}
+
+#telp-02{
+	margin-left: 90px;
+	float: left;
+	font-weight: bold;
+	padding: 10px;
+	
+			font-family: tahomabd;
+			font-size: 50px;
+			color: silver;
+}
+
+.mail{
+	float: right;	
+	margin-top: 100px;
+	margin-right: 10px;
+	font-family: century;
+	font-size: 15px;
+	color: grey;
+	text-decoration:none;
+	transition: all .5s ease;
+			
+}					
+					
+			.mail:hover {	
+				color: lightseagreen;
+				transition: all .5s ease;
+			}
+}
+#logo-01{
+	width: 200px;
+	height: 200px;
+	float:left;
+
+}
+
+#logo-02{
+	width: 200px;
+	height: 200px;
+	margin-left: 20px;
+	float:left;
+}
+
+#logo-03{
+	width: 200px;
+	height: 200px;
+	margin-left: 20px;
+	float:left;
+}			
+
+#bungkus-04{
+	width: 1050px;
+	height: 600px;
+	margin-top: 20px;
+	float:left;
+	background-color: silver;
+	transition: all .5s ease;
+}
+
+.map{
+	width: 1050px;
+	height: 600px;
+	border:0;
+}
+
+#bungkus-12{
+	width: 1050px;
+	margin-top: 20px;
+	float: left;
+	font-family: century;
+	padding-top: 20px;
+	font-size: 10px;
+	text-align:center;
+	border-top: 5px solid black;
+}
+
+#atribut-01{
+	float:left;
+}
+
+#atribut-02{
+	float:right;
+}
+
+			.link-05{
+				text-decoration:none;	
+				color: black;
+				transition: all .5s ease;
+				
+			}
+
+			.link-05:hover {	
+				color: lightseagreen;
+				transition: all .5s ease;
+			}
+	
+
+#scroll{
+	width:50px;
+	height:50px;
+	background-color: silver;	
+	border-radius:100%;
+	transition: all .5s ease;
+	
+		position:fixed; 
+		bottom:10px; 
+		right:10px;
+}
+
+			#scroll:hover{
+				background-color: lightseagreen;
+				transition: all .5s ease;
+			}
+			
+			.img-04{
+				width:50px;
+				height:50px;
+				border-radius:100%;
+				float:left;
+				background-image:URL("img/icon/scroll.png");
+			}
+	
+@media screen and (max-width: 1000px) {
+
+#bungkus-01{
+	height: 400px;
+}
+
+#logo{
+	width: 970px;
+	height: 200px;
+	margin-left:20px;
+	padding-right:20px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+
+				.link-00{
+						font-size: 100px;
+						}
+				
+				.textbox-00{
+						margin-top:20px;
+						font-size: 40px;
+						}
+
+#bungkus-02{
+	width: 1000px;
+	margin-left: 20px;
+}
+
+.navigasi-01{
+	width: 240px;
+}
+
+.navigasi-02{
+	width: 240px;
+}
+		
+				.link-01{
+						font-size: 40px;
+				}
+
+#bungkus-03{
+height:380px;
+}				
+
+#telp-01{
+	font-size: 100px;
+}
+
+#telp-02{
+	margin-top: 10px;
+	font-size: 70px;
+}				
+				
+.mail{
+	margin-top: 120px;
+	font-size: 30px;
+}
+
+#bungkus-04{
+	width: 1050px;
+	height: 1050px;
+	border:0;
+}
+
+.map{
+	width: 1050px;
+	height: 1050px;
+	border:0;
+}
+
+
+.link-05{
+	font-size: 25px;
+}
+		
+#scroll{
+	width:200px;
+	height:200px;
+}
+
+.img-04{
+	width:200px;
+	height:200px;
+	background-image:URL("img2/icon/scroll.png");
+}
+}
